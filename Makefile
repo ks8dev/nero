@@ -1,8 +1,8 @@
-build:
-	go build -o ./cmd/. ./cmd/main.go
-
 run:
-	go run ./cmd/main.go
+	go run cmd/main.go
 
-start: build
-	./cmd/main
+build:
+	go build -o bin/main cmd/main.go
+
+production:
+	./bin/main
